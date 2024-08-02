@@ -6,20 +6,25 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
+        foregroundColor : Colors.white,
         title: const Text(
-          'My Catalog App',
+          'Catalog App',
         ),
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.blueGrey,
       ),
       drawer: const Drawer(
 
       ),
-      body: Center(
-        child: Container(
-          child: const Text('Hello World!!!!'
+      body: const Center(
+          child: Text(
+            'Hello World!!!!',
+            style : TextStyle(
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            )
           ),
-        ),
       ),
     );
   }
