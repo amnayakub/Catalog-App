@@ -16,20 +16,51 @@ class LoginPage extends StatelessWidget {
           const Text(
             'Welcome!',
             style: TextStyle(
-              fontWeight: FontWeight.bold,
+              color: Color.fromARGB(255, 64, 85, 175),
+              fontWeight: FontWeight.w900,
               fontSize: 30,
             ),
           ),
-          TextFormField(
-            decoration: const InputDecoration(
-              labelText: "Username",
-              hintText: "Enter username",
-            ),
+          const SizedBox(
+            height: 25,
           ),
-          TextFormField(
-            decoration: const InputDecoration(
-              labelText: "Password",
-              hintText: "Enter password",
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 16.0, horizontal: 45.0),
+            child: Column(
+              children: [
+                TextFormField(
+                  decoration: const InputDecoration(
+                    labelText: "Username",
+                    hintText: "Enter username",
+                    border: OutlineInputBorder(),
+                    filled: true,
+                    fillColor: Colors.white,
+                    contentPadding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                TextFormField(
+                  obscureText: true,
+                  decoration: const InputDecoration(
+                    labelText: "Password",
+                    hintText: "Enter password",
+                    border: OutlineInputBorder(),
+                    filled: true,
+                    fillColor: Colors.white,
+                    contentPadding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 10.0),
+                  ),
+                ),
+                const SizedBox(
+                  height: 25,
+                ),
+                ElevatedButton(
+                  style: TextButton.styleFrom(),
+                  onPressed: () {},
+                  child: const Text('Login'),
+                ),
+              ],
             ),
           ),
         ],
