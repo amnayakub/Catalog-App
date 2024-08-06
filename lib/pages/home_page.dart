@@ -9,11 +9,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(
-        foregroundColor : Colors.white,
+        foregroundColor : const Color(0xFF161514),
         title: const Text(
           'Catalog App',
         ),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: const Color(0xFFADD8E6),
       ),
       drawer: const MyDrawer(),
       body: const Center(
